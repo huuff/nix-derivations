@@ -53,6 +53,10 @@
         # for `nix fmt`
         formatter = treefmt-build.wrapper;
 
+        packages = {
+          leptosfmt = pkgs.callPackage ./leptosfmt.nix { };
+        };
+
         devShells.default = pkgs.mkShell {
           inherit (pre-commit-check) shellHook;
           buildInputs =
