@@ -55,6 +55,7 @@
 
         packages = {
           leptosfmt = pkgs.callPackage ./leptosfmt.nix { };
+          cargo-upgrades = pkgs.callPackage ./cargo-upgrades.nix { };
         };
 
         devShells.default = pkgs.mkShell {
