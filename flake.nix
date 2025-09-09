@@ -2,7 +2,7 @@
   description = "Template for nix projects";
 
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-24.05";
+    nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-25.05";
     pre-commit.url = "github:cachix/git-hooks.nix";
     treefmt.url = "github:numtide/treefmt-nix";
     systems.url = "github:nix-systems/x86_64-linux";
@@ -56,6 +56,7 @@
         packages = {
           leptosfmt = pkgs.callPackage ./leptosfmt.nix { };
           cargo-upgrades = pkgs.callPackage ./cargo-upgrades.nix { };
+          wasm-bindgen-cli_0_2_101 = pkgs.callPackage ./wasm-bindgen-cli_0_2_101.nix { };
         };
 
         devShells.default = pkgs.mkShell {
