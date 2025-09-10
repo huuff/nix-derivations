@@ -57,6 +57,8 @@
           leptosfmt = pkgs.callPackage ./leptosfmt.nix { };
           cargo-upgrades = pkgs.callPackage ./cargo-upgrades.nix { };
           wasm-bindgen-cli_0_2_101 = pkgs.callPackage ./wasm-bindgen-cli_0_2_101.nix { };
+          # the current version seems to break when using daisyUI
+          vscode-tailwindcss_0_14_11 = pkgs.callPackage ./vscode-tailwind.nix { };
         };
 
         devShells.default = pkgs.mkShell {
