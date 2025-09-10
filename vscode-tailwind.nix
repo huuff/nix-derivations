@@ -4,7 +4,7 @@ pkgs.vscode-utils.buildVscodeMarketplaceExtension {
     name = "vscode-tailwindcss";
     publisher = "bradlc";
     version = "0.14.11";
-    hash = "sha256-agntfMsLAYASviH7Wuw/W8JwfHRi6qAfuMkqmFWT0bg=";
+    hash = "sha256-sZcbUIAs4m96rBfYJbyZegqAqL71+OjVykqna+QMdu0=";
   };
   meta = {
     changelog = "https://marketplace.visualstudio.com/items/bradlc.vscode-tailwindcss/changelog";
