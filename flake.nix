@@ -54,9 +54,9 @@
         formatter = treefmt-build.wrapper;
 
         packages = {
-          leptosfmt = pkgs.callPackage ./leptosfmt.nix { };
-          cargo-upgrades = pkgs.callPackage ./cargo-upgrades.nix { };
-          wasm-bindgen-cli_0_2_101 = pkgs.callPackage ./wasm-bindgen-cli_0_2_101.nix { };
+          leptosfmt = pkgs.callPackage ./drvs/leptosfmt.nix { };
+          cargo-upgrades = pkgs.callPackage ./drvs/cargo-upgrades.nix { };
+          wasm-bindgen-cli_0_2_101 = pkgs.callPackage ./drvs/wasm-bindgen-cli_0_2_101.nix { };
         };
 
         devShells.default = pkgs.mkShell {
